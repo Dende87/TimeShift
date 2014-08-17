@@ -22,6 +22,9 @@ Public Class frmTimeShift
     Private Sub btnStartShutdown_Click(sender As Object, e As EventArgs) Handles btnStartShutdown.Click
         Try
 
+      ' Testing :)
+
+
             pnlTimeSet.Enabled = False
             pnlDayTimeSet.Enabled = False
             btnStartShutdown.Enabled = False
