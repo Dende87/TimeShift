@@ -38,3 +38,9 @@ Icon
 
 # Debug files
 TimeShift/obj/Debug
+TimeShift_TemporaryKey.pfx
+bin/Debug/TimeShift.vshost.exe
+obj/Debug/DesignTimeResolveAssemblyReferences.cache
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+obj/Debug/TempPE/My Project.Resources.Designer.vb.dll
+obj/Debug/TimeShift.vbproj.FileListAbsolute.txt
