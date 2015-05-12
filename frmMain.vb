@@ -217,10 +217,11 @@ Public Class frmTimeShift
     Public Const HTCAPTION As Integer = 2
     Public Const WM_NCLBUTTONDOWN As Integer = &HA1
 
-    <Security.Permissions.SecurityPermission(Security.Permissions.SecurityAction.Demand, Flags:=Security.Permissions.SecurityPermissionFlag.UnmanagedCode)> Public Sub DragMove()
-        ReleaseCapture()
-        SendMessage(New System.Runtime.InteropServices.HandleRef(Me, MyBase.Handle), WM_NCLBUTTONDOWN, HTCAPTION, 0)
-    End Sub
+  <Security.Permissions.SecurityPermission(Security.Permissions.SecurityAction.Demand, Flags:=Security.Permissions.SecurityPermissionFlag.UnmanagedCode)>
+  Public Sub DragMove()
+    ReleaseCapture()
+    SendMessage(New System.Runtime.InteropServices.HandleRef(Me, MyBase.Handle), WM_NCLBUTTONDOWN, HTCAPTION, 0)
+  End Sub
 
     Private Declare Auto Function SendMessage Lib "user32" (ByVal hWnd As HandleRef, ByVal msg As Integer, ByVal wParam As Integer, ByVal lParam As Integer) As IntPtr
     Private Declare Auto Function ReleaseCapture Lib "user32" () As Integer
